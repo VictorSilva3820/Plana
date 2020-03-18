@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: keepCalm;
+    src: url('../codigosCSS/fonts/keepFont.ttf');
+}
+body{
+    background-color: #025467;
+}
+img{
+    max-width: 100%;    
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ #menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0em 3em;
+    margin: 4vh 0;
+}
+#menu #imgMenu{
+    background-image: url("imgs/logoPlana.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 40px;
+    max-width: 170px;
+}
+#menu ul{
+    display: flex;
+    justify-content: center;
+} 
+ #menu ul a{
+    font-family: keepCalm;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    color: white;
+    border-radius: 3px;
+    transition: ease 0.2s;
+}
+ #menu ul a:hover{
+     cursor: pointer;
+     color: #025467;
+     background: white;
+     transition: ease 0.2s;
+ }
+ #menu .enabled{
+     background: white; 
+     color:#025467;
+ }
+ #sectionPrincipal{
+     width: 100%;
+     max-width: 1300px;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
+ #sectionPrincipal #imgPrincipal img{
+     max-width: 650px;
+     margin: auto;
+ }
+ #cadastroForm{
+     width: 100%;
+     max-width: 500px;
+     display: flex;
+     flex-direction: column;
+     background: white;
+     box-shadow: 25px 40px 80px 0 rgba(0, 0, 0, 0.3), 0 6px 90px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 10px;
+     padding: 3em 2.8em;
+ }
+#cadastroForm #textosCadastra h1{
+    font-family: keepCalm;
+    color: black;
+    font-size: 2.2em;
+}
+#cadastroForm #textosCadastra h2{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    line-height: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#cadastroForm #textCadastrou{
+    width: 100%;
+    background: #025467;
+    opacity: 0.8;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transform: 0.5s ease;
+}
+#cadastroForm #textError{
+    width: 100%;
+    background: #df3434;
+    opacity: 0.8;
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transform: 0.5s ease;
+}
+#cadastroForm #formCadastro{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+#cadastroForm #formCadastro form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#cadastroForm #formCadastro #divQuebrada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#cadastroForm #formCadastro #divQuebrada div{
+    display: flex;
+    flex-direction: column;
+}
+#cadastroForm #formCadastro #divQuebrada input{
+    width: 200px;
+}
+#cadastroForm #formCadastro div{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+}
+#cadastroForm #formCadastro label{
+    line-height: 0.4;
+}
+#cadastroForm #formCadastro input{
+    background: #f2f2f2;
+    border: none;
+    padding: 0.4em 0.7em;
+    outline: none;
+}
+#cadastroForm #formCadastro input[type=submit]{
+    font-weight: bold;
+    background: white;
+    border: dashed 2px #025467;
+    border-spacing: 10px 10px;
+    border-radius: 100px;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+#loginForm div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 10px;
+}
+#loginForm div label{
+    line-height: 0.4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+#loginForm div input{
+    background: #f2f2f2;
+    border: none;
+    padding: 0.4em 0.7em;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+@media only screen and (max-width: 600px){
+    #sectionPrincipal{
+        flex-direction: column;
+        background: red;
+    }
+}

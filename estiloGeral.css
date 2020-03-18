@@ -1,0 +1,704 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #c3c1c1;
+    border-radius: 10px;
+}
+@font-face {
+    font-family: keepCalm;
+    src: url('../codigosCSS/fonts/keepFont.ttf');
+}
+img{
+    max-width: 100%;    
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0em 3em;
+    margin: 4vh 0;
+}
+.menu .imgMenu{
+    background-image: url("imgs/logoPlanaGeral.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 40px;
+    max-width: 170px;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+} 
+.menu ul a{
+    font-family: keepCalm;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin: 0.5em 1em;
+    color: #025467;
+    text-decoration: none;
+    transition: ease .5s;
+}
+.menu ul a:hover:not(#sair){
+     cursor: pointer;    
+     background: #025467;
+     border-radius: 5px;
+     color: white;
+}
+.menu ul #sair{
+    border: dashed 2px #025467;
+    color: black;
+}
+.menu a.ativado{
+    background: #025467;
+    color: white;
+    border-radius: 5px;
+}
+.telaInicial{
+    display: flex;
+    width: 100%;
+    height: 82vh;
+    max-width: 1300px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+.telaInicial .bannerPrincipal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.telaInicial .bannerPrincipal .textos{
+    width: 100%;
+    max-width: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.telaInicial .bannerPrincipal .textos h2{
+    font-family: keepCalm;
+    font-size: 4em;
+    line-height: 0.5;
+}
+.telaInicial .bannerPrincipal .textos h1{
+    font-family: keepCalm;
+    font-size: 8em;
+}
+.telaInicial .bannerPrincipal .imgInicial{
+    background-image: url("../codigosCSS/imgs/sectionImg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    max-width: 50%;
+}
+.telaInicial .botaoExplorar{
+    background: #025467;
+    color: white;
+    border-radius: 50px;
+    padding: 1em;
+    font-family: keepCalm;
+    border: none;
+    width: 100%;
+    max-width: 200px;
+    margin: 1vh auto;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+.explorar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    max-width: 1300px;
+    margin: auto;
+}
+.explorar h1{
+    font-family: keepCalm;
+    color: black;
+}
+.explorar .cardsMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.explorar .card-atividade{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    background:#025467;
+    box-shadow: 5px 5px 40px 0 rgba(0, 0, 0, 0.3), 0 4px 90px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    transition: linear .15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.explorar .card-atividade .img{
+    background-image: url("../codigosCSS/imgs/tarefar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+}
+.explorar .card-atividade h1 a{
+    color: white;
+    text-decoration: none;
+}
+.explorar .card-atividade:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 80px 0 rgba(0, 0, 0, 0.3), 0 4px 90px 0 rgba(0, 0, 0, 0.19);
+}
+.explorar .card-atividade h1{
+    color: white;
+    font-size: 1.5em;
+}
+.explorar .card-calendario{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    background: #025467;
+    box-shadow: 5px 5px 40px 0 rgba(0, 0, 0, 0.3), 0 4px 90px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    transition: linear .15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.explorar .card-calendario .img{
+    background-image: url("../codigosCSS/imgs/calendar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+}
+.explorar .card-calendario:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 80px 0 rgba(0, 0, 0, 0.3), 0 4px 90px 0 rgba(0, 0, 0, 0.19);
+}
+.explorar .card-calendario h1{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.explorar .card-calendario h1 a{
+    color: white;
+    text-decoration: none;
+}
+.explorar .card-conta{
+    height: 400px;
+    width: 300px;
+    position: relative;
+    background: #025467;
+    box-shadow: 5px 5px 40px 0 rgba(0, 0, 0, 0.3), 0 4px 90px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    transition: linear .15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.explorar .card-conta .img{
+    background-image: url("../codigosCSS/imgs/contar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+}
+.explorar .card-conta h1 a{
+    color: white;
+    text-decoration: none;
+}
+.explorar .card-conta:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 80px 0 rgba(0, 0, 0, 0.3), 0 4px 90px 0 rgba(0, 0, 0, 0.19);
+}
+.explorar .card-conta h1{
+    color: white;
+    font-size: 1.5em;
+}
+.quemSomos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.quemSomos article{
+    width: 100%;
+    text-align: justify
+}
+.quemSomos article h1{
+    font-family: keepCalm;
+    padding: 1em 0em;
+    color: black;
+}
+.quemSomos article p{
+    font-family: 'Poppins', sans-serif;
+}
+.quemSomos .imgQuem{
+    background-image: url("../codigosCSS/imgs/calendarioImg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    max-width: 50%;
+}
+.calendarioTela{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80vh;
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    font-family: keepCalm;
+}
+.c-left{
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.c-left .d-left{
+    padding: 30px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.c-left .d-left div{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    color: #262626;
+}
+
+.c-left .d-left div.n-left{
+    background: #025467;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    border-radius: 50%;
+}
+
+.c-left .d-left div.mes-left{
+    width: 100px;
+    color: #025467;
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+
+/* Calendario */
+
+.calendario {
+    width: 700px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.calendario .data {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 30px;
+    box-sizing: border-box;
+}
+
+.calendario .data div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color:  #262626;
+}
+
+.calendario .data div.mes {
+    justify-self: center;
+    width: 50px;
+    font-weight: 700;
+}
+.calendario .data div.mes.active{
+    background: #025467;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.calendario .data div.numero{
+    justify-self: center;
+    width: 50px;
+    height: 50px;
+    background: #ccc; 
+}
+
+.calendario .data div.numero:hover {
+    background: #025467;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.atividadesCards .cartaoGroup{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+.atividadesCards .cartaoGroup .aviso{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.atividadesCards .cartaoGroup .aviso h1{
+    font-family: keepCalm;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 0.5;
+}
+.atividadesCards .cartaoGroup .aviso p{
+    font-family: keepCalm;
+    font-size: 20px;
+}
+.atividadesCards .cartao{
+    width: 300px;
+    height: 350px;
+    background:#f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+.atividadesCards .cartao .titulo{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.atividadesCards .cartao .titulop{
+    font-weight: bold;
+    color: #025467;
+    font-size: 18px;
+}
+.atividadesCards .main{
+    background: #025467;
+    color: white;
+    align-items: center;
+}
+.atividadesCards .main a{
+    font-size: 150px;
+    line-height: 0.5;
+    cursor: pointer;
+}
+.atividadesPendentes{
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.atividadesPendentes .atvFalta{
+    width: 100%;
+    background: #025467;
+    margin: 40px 0;
+    padding: 15px;
+    font-family: keepCalm;
+    color: white;
+}
+.atividadesPendentes .atvFalta .branco{
+    background: #f2f2f2;
+}
+.atividadesPendentes .atvFalta .amarelo{
+    background: #fff491;
+}.atividadesPendentes .atvFalta .azul{
+    background: #6adcff;
+}
+.atividadesPendentes .atvFalta .cont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.atividadesPendentes .atvFalta .cont h1{
+    font-size: 3em;
+}
+.atividadesPendentes .atvFalta .cont .atvFaltaTextos{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    line-height: 0.6;
+}
+.atividadesPendentes .atvFalta .cont .atvFaltaTextos h5{
+    font-size: 1em;
+    font-weight: bolder;
+}
+.atividadeForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.atividadeForm div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 10px;
+}
+.atividadeForm div label{
+    line-height: 0.4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.atividadeForm div input{
+    background: #f2f2f2;
+    border: none;
+    padding: 0.4em 0.7em;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.bemVindoConta{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.bemVindoConta .textosConta{
+    width: 50%;
+    font-family: keepCalm;
+    color: black;
+}
+.bemVindoConta .textosConta h1{
+    line-height: 0.3;
+    font-size: 3em;
+}
+.bemVindoConta .bemVindoFoto{
+    background-image: url("imgs/welcomeImage.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+    max-width: 50%;
+}
+.dadosConta{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.dadosConta .imgConta{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-image: url("imgs/imgAvatar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.dadosConta form{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.dadosConta .formularioConta label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #025467;  
+}
+.dadosConta .formularioConta input:not(#conta){
+    background: #f2f2f2;
+    border: none;
+    padding: 0.4em 0.7em;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    width: 80%;
+}
+.dadosConta .formularioConta div:not(#conta){
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.dadosConta .formularioConta #conta {
+    display: flex;
+    flex-direction: column;
+}
+.dadosConta .formularioConta #conta input{
+    background: #f2f2f2;
+    border: none;
+    padding: 0.4em 0.7em;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    width: 80%;
+}
+.dadosConta .formularioConta div div{
+    display: flex;
+    flex-direction: column;
+}
+.dadosConta input[type="submit"]{
+    background: #025467;
+    color: white;
+    border-radius: 50px;
+    padding: 1em;
+    font-family: keepCalm;
+    border: none;
+    width: 100%;
+    max-width: 200px;
+    margin: 2vh auto;
+    outline: none;
+    text-align: center;
+}
+.contaImgForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around; 
+}
+.contaImgForm div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 10px;
+}
+.contaImgForm div label{
+    line-height: 0.4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.contaImgForm div input{
+    background: #f2f2f2;
+    border: none;
+    padding: 0.4em 0.7em;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+footer {
+	background-color: #025467;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+    height: 100%;
+    align-items: center;
+}
+footer h1{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer .acesse{
+    display: flex;
+    flex-direction: column;
+}
+footer .acesse a{
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+footer .imgFooter{
+    background-image: url("../codigosCSS/imgs/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+footer .siga{
+    display: flex;
+    flex-direction: column;
+}
+footer .siga div{
+    display: flex;
+    /* padding: 50px; */
+    /* flex-direction: column; */
+}
+footer .siga div div{
+    margin: 50px 20px;
+}
+footer .siga .fb{
+    background-image: url("../codigosCSS/imgs/fcb.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+footer .siga .twt{
+    background-image: url("../codigosCSS/imgs/twt.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+footer .siga .ig{
+    background-image: url("../codigosCSS/imgs/ig.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+footer textarea{
+    background: none;
+    border: 2px solid white;
+}
+@media only screen and (max-width: 600px){
+    .telaInicial .bannerPrincipal{
+        flex-direction: column;
+    }
+    .explorar .cardsMenu{
+        flex-direction: column;
+    }
+    .quemSomos{
+        flex-direction: column;
+    }
+}
